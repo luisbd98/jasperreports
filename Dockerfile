@@ -38,4 +38,4 @@ ENV ALLOW_EMPTY_PASSWORD="no" \
 EXPOSE 8080 8443
 USER 1001
 ENTRYPOINT [ "/app-entrypoint.sh" ]
-CMD [ "nami", "start", "--foreground", "tomcat" ]
+CMD [ "nami", "start", "--foreground", "tomcat", "--log-level=trace" ]
